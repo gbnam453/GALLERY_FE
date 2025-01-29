@@ -1,28 +1,62 @@
+/* 전체 화면을 중앙 정렬 */
 .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 뷰포트 높이 전체 사용 */
+  width: 100vw; /* 뷰포트 너비 전체 사용 */
   text-align: center;
   padding: 20px;
 }
 
+/* 제목을 중앙 정렬 */
+.home-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 버튼들을 중앙 정렬 */
 .button-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
-  max-width: 400px;
-  margin: 20px auto;
+  align-items: center;
+  max-width: 350px;
 }
 
+/* 버튼 스타일 */
 .nav-button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
   background-color: #3498db;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
+  border-radius: 10px;
   font-size: 16px;
+  width: 100px;
+  height: 50px;
+  transition: background 0.3s ease;
 }
 
+/* 버튼 호버 효과 */
 .nav-button:hover {
   background-color: #2980b9;
+}
+
+/* 반응형 - 모바일에서 한 줄에 2개씩 */
+@media (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+  }
+}
+
+/* 반응형 - 더 작은 화면에서는 1개씩 */
+@media (max-width: 400px) {
+  .button-grid {
+    grid-template-columns: repeat(1, 1fr); /* 한 줄에 1개 */
+  }
 }

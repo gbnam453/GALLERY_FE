@@ -1,10 +1,10 @@
 import "./DeerStyles.css";
 
-function Home() {
+function Deer() {
   return (
     <div className="Deer-container">
-      <h2>Home Screen</h2>
-      <p>Welcome to the Home screen.</p>
+      <h2>Deer Screen</h2>
+      <p>Welcome to the Deer screen.</p>
     </div>
   );
 }
