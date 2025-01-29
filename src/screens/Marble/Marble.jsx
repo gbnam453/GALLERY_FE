@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./MarbleStyles.css";
 
 function Marble() {
   return (

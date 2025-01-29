@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./DeerStyles.css";
 
 function Home() {
   return (

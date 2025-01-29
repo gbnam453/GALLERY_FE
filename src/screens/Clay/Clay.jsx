@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./ClayStyles.css";
 
 function Clay() {
   return (

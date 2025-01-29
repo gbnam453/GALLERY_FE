@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./PaintStyles.css";
 
 function Paint() {
   return (

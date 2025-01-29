@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./BarnacleStyles.css";
 
 function Barnacle() {
   return (

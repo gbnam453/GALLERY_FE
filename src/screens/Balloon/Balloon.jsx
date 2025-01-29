@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./BalloonStyles.css";
 
 function Balloon() {
   return (

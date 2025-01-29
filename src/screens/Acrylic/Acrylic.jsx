@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./AcrylicStyles.css";
 
 function Acrylic() {
   return (

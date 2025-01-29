@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./WoodStyles.css";
 
 function Wood() {
   return (
