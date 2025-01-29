@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./screens/Home/Home";
+import Acrylic from "./screens/Acrylic/Acrylic";
+import Balloon from "./screens/Balloon/Balloon";
+import Barnacle from "./screens/Barnacle/Barnacle";
+import Clay from "./screens/Clay/Clay";
+import Deer from "./screens/Deer/Deer";
+import Marble from "./screens/Marble/Marble";
+import Paint from "./screens/Paint/Paint";
+import Umbrella from "./screens/Umbrella/Umbrella";
+import Wood from "./screens/Wood/Wood";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/acrylic" element={<Acrylic />} />
+                <Route path="/balloon" element={<Balloon />} />
+                <Route path="/barnacle" element={<Barnacle />} />
+                <Route path="/clay" element={<Clay />} />
+                <Route path="/deer" element={<Deer />} />
+                <Route path="/marble" element={<Marble />} />
+                <Route path="/paint" element={<Paint />} />
+                <Route path="/umbrella" element={<Umbrella />} />
+                <Route path="/wood" element={<Wood />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
